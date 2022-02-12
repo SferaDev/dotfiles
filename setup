@@ -1,0 +1,12 @@
+#!/usr/bin/env fish
+
+# Include bin folder into PATH
+PWD=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+echo "set -gx PATH $PWD/bin $PATH" >> ~/.config/fish/config.fish
+
+# Add git aliases
+git config --global alias.undo 'reset HEAD^'
+git config --global alias.unstage 'reset HEAD --'
+
+# Default pull strategy
+git config pull.rebase true
