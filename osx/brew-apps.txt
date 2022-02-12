@@ -21,6 +21,6 @@ maccy
 slack
 ngrok
 insomnia
-hyper
+iterm2
 fish
 tmux
